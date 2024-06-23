@@ -11,6 +11,30 @@
     
     
 }
+.msg{
+  color: white;
+    animation: blink-animation 0.7s steps(5, start) infinite;
+    -webkit-animation: blink-animation 0.7s steps(5, start) infinite;
+}
+            .msg{
+            position: absolute;
+            top: 150px;
+            left: 580px;
+            font-size: 20px;
+        }
+
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+
+        @-webkit-keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+
 .mainbar{
     
     background-color: black;
@@ -145,14 +169,14 @@ label{
 }
 
 
-#line , p{
+.unwind{
   position: absolute;
   color: white;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 459px;
   text-align: center;
-  left:252px;
-  top:53px;
+  left:523px;
+  top:85px;
   font-size:xx-large;
   font-weight: 600;
   animation: glow 2s ease-in-out infinite alternate;
